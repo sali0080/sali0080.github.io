@@ -1,0 +1,47 @@
+/* 
+This is a CSS comment */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* 
+Selecting multiple main element */
+header, footer {
+    background-color: skyblue;
+}
+
+.current {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+/* Selecting element with ID value */
+#my-image {
+    box-shadow: -0px 0px 2px 1px black;
+}
+/* using formula in nth-child selector */
+section li:nth-child(odd) {
+    background-color: antiquewhite;
+}
+section dd:first-child{
+    background-color: antiquewhite;
+}
+
+/* Replacing bullets from list of hobbies with square */
+ul {
+    list-style-type: square;
+}
+
+/* Design and removing underline from the links */
+a {
+    text-decoration: none;
+    background-color: aliceblue;
+    border: 2px solid blue;
+    color: black ;
+}
+a:hover {
+    background-color: blue;
+}
+
