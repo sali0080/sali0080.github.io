@@ -1,0 +1,157 @@
+/* 
+This is a CSS comment
+Shorcut for adding a comment is control/cmd + /
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    /* Adding a background Image */
+    background-image: url(../images/white_brick_wall.png);
+}
+
+h1 {
+    color: cadetblue;
+}
+
+p {
+    background-color: antiquewhite;
+}
+
+/* Selecting multiple elements */
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (html font size) = 16px * 1.5 = 24px */
+}
+
+/* Selecting element with ID value */
+/* As a best practice try to avoid using ID for styles */
+#treatoftheweek {
+    /* background-color: cadetblue; */
+    /* what we're asking for in order - color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element fontsize) = 20px */
+    /* viewport based units */
+    /* commented just to know that it's there - width: 100vw; */
+    width: 50%;
+
+}
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+/* Combinators */
+/* direct child selector - will only select the direct child of the parent */
+article>p {
+    font-size: 24 px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+
+}
+
+/* adjacent sibling selector - selects the element that is the very next sibling to the selected element, if any exist */
+h3+ul {
+    border: 1px solid black;
+}
+
+/* Sibling selector */
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute selector */
+[href="treatoftheweek"] {
+    font-weight: bold;
+}
+
+[src$=".jpg"] {
+    border: 10px solid darkslategray;
+}
+
+/* Using psuedo classes */
+/* Styling the navegation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizontal, vertical, blur, spread, color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position selectors */
+/* first-child and last-child */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Styling the table */
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd */
+tbody tr:nth-child(even) {
+    /* this is how we do a hex color value with 6 characters */
+    background-color: #d5836c;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+
+/* using formula in nth-child slectors */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Specificity */
+/* Formula: inline style, ID, Class, Tag-name */
+/*    0       0    0      0      */
+/* 0000 */
