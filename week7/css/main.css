@@ -10,6 +10,29 @@ body {
     background-image: url(../images/white_brick_wall.png);
 }
 
+/* Box model example */
+section p {
+    width: 50%;
+    /* if were using 2 values = first value-top/bottom | second value is - left and right */
+    padding: 1rem .5rem;
+    /* 4 value = top bottom left and right */
+    margin: -1em 2em 2em 2em;
+    border-bottom: 2px solid black;
+}
+
+/* Adding container from header to footer */
+.container {
+    /* anything with this width will not exceed it depending page web  */
+    max-width: 1200px;
+    /* center to the whole page with the max-width */
+    margin: 0 auto;
+}
+
+/* Calling all images to fit the full img no matter the web size */
+img {
+    width: 100%;
+}
+
 h1 {
     color: cadetblue;
 }
@@ -31,11 +54,22 @@ nav ul {
     list-style: none;
 }
 
+/* In line into block properties, space between category */
+nav ul li{
+    display: inline-block;
+    width: 45%;
+    padding: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 nav ul a {
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
     /* 1.5rem (html font size) = 16px * 1.5 = 24px */
+    display: block;
+
 }
 
 /* Selecting element with ID value */
