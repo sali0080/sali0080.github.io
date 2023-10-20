@@ -6,6 +6,8 @@ Shorcut for adding a comment is control/cmd + /
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding a background Image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1 {
@@ -17,7 +19,10 @@ p {
 }
 
 /* Selecting multiple elements */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-decoration: underline;
 }
 
@@ -29,12 +34,25 @@ nav ul {
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (html font size) = 16px * 1.5 = 24px */
 }
 
 /* Selecting element with ID value */
 /* As a best practice try to avoid using ID for styles */
 #treatoftheweek {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    /* what we're asking for in order - color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element fontsize) = 20px */
+    /* viewport based units */
+    /* commented just to know that it's there - width: 100vw; */
+    width: 50%;
+
 }
 
 .blue-link {
@@ -55,6 +73,11 @@ nav ul a {
 /* direct child selector - will only select the direct child of the parent */
 article>p {
     font-size: 24 px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+
 }
 
 /* adjacent sibling selector - selects the element that is the very next sibling to the selected element, if any exist */
@@ -68,7 +91,7 @@ h3~p {
 }
 
 /* Attribute selector */
-[href="treatoftheweek"]{
+[href="treatoftheweek"] {
     font-weight: bold;
 }
 
@@ -78,15 +101,16 @@ h3~p {
 
 /* Using psuedo classes */
 /* Styling the navegation */
-nav ul a, 
+nav ul a,
 nav ul a:link,
-nav ul a:visited{
+nav ul a:visited {
     background-color: antiquewhite;
     /* horizontal, vertical, blur, spread, color */
     box-shadow: -2px 2px 4px 2px black;
 }
+
 nav ul .current,
-nav ul a:hover, 
+nav ul a:hover,
 nav ul a:focus {
     text-decoration: underline;
 
@@ -102,12 +126,12 @@ aside ul li:first-child {
     font-weight: bold;
 }
 
-section ol li:last-child{
+section ol li:last-child {
     font-weight: bold;
 }
 
 /* Styling the table */
-table{
+table {
     border-collapse: collapse;
 }
 
@@ -118,7 +142,7 @@ tbody tr:nth-child(even) {
 }
 
 table th:nth-child(n),
-table td:nth-child(n){
+table td:nth-child(n) {
     border: 1px solid #000;
 }
 
@@ -131,4 +155,3 @@ table td:nth-child(2n+1) {
 /* Formula: inline style, ID, Class, Tag-name */
 /*    0       0    0      0      */
 /* 0000 */
-
