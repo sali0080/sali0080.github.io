@@ -14,8 +14,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #aad4cf;
 }
+
 /* Trageting all Headings */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-weight: 400;
 }
 
@@ -34,6 +38,7 @@ h3 {
 h4 {
     font-size: 20px;
 }
+
 /* heading sizing */
 h1 {
     position: absolute;
@@ -93,9 +98,10 @@ nav li {
     border-right: 2px solid black;
 
 }
- nav li:nth-child(3){
+
+nav li:nth-child(3) {
     border-right: none;
- }
+}
 
 /* moving image to the left side of the page */
 .starfish {
@@ -114,6 +120,7 @@ nav li {
 .learn {
     margin: 20px;
 }
+
 .box {
     width: 100%;
     height: 100%;
@@ -124,7 +131,6 @@ nav li {
     width: 100%;
     height: 100%;
     margin-block: 20px;
-    padding-top: 1em 1em 3em 1em;
 }
 
 /* styling button */
