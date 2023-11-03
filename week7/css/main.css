@@ -66,6 +66,7 @@ nav ul li{
 nav ul a {
     color: darkslategray;
     text-decoration: none;
+    /* em=1*5xfont size */
     font-size: 1.5rem;
     /* 1.5rem (html font size) = 16px * 1.5 = 24px */
     display: block;
@@ -86,19 +87,49 @@ nav ul a {
     /* viewport based units */
     /* commented just to know that it's there - width: 100vw; */
     width: 50%;
+    /* position reslative */
+    position: relative;
+    padding: 1em 1em 4em 1em;
 
+}
+
+/* absolute position */
+.blue-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 .blue-link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
+    padding: 1.5em;
+    width: 300px;
+    display: block;
 }
 
 .large-text {
     font-size: 24px;
+    line-height: 1.5em;
+}
+/* example of Float layout */
+article,
+aside {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 255);
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
 }
 
+aside {
+    width: 20%;
+}
+
+section{
+    clear: both;
+}
 .white-text {
     color: antiquewhite;
 }
@@ -131,6 +162,16 @@ h3~p {
 
 [src$=".jpg"] {
     border: 10px solid darkslategray;
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 /* Using psuedo classes */

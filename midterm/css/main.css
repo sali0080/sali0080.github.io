@@ -1,0 +1,134 @@
+/* 
+This is a CSS comment
+Shorcut for adding a comment is control/cmd + /
+*/
+
+/* adds main font and color for all page */
+html {
+    box-sizing: border-box;
+    background-color: #aad4cf;
+    display: inline 20%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+}
+/* Trageting all Headings */
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+/* heading sizing */
+h1 {
+    position: absolute;
+    color: white;
+    top: 30%;
+    bottom: 40%;
+    right: 30%;
+}
+
+/* box colour and margin of entire html */
+.container {
+    width: 1000px;
+    height: 100%;
+    background-color: #c4d7d5;
+    position: relative;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+}
+
+/* moves footer to the right side of the page */
+.footer {
+    text-align: right;
+    padding: 0px 15px 20px;
+    margin: 10px;
+}
+
+/* adds H1 on top of wide starfish */
+/* Only center H1, still missing layer and colour white(not working)? */
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* adds styling for navigation */
+nav ul {
+    margin: 0px;
+    padding-left: 0px;
+    text-transform: uppercase;
+    color: grey;
+    font-size: 23px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    width: 30%;
+    border-right: 2px solid black;
+
+}
+ nav li:nth-child(3){
+    border-right: none;
+ }
+
+/* moving image to the left side of the page */
+.starfish {
+    float: left;
+    width: 200px;
+    padding: 12px;
+}
+
+/* adding border box to form and expanding input box */
+.full-border {
+    border: 1px solid black;
+    background: no-repeat;
+    margin: 20px;
+}
+
+.learn {
+    margin: 20px;
+}
+.box {
+    width: 100%;
+    height: 100%;
+    padding: 0.2em 0.2em 1em 0.2em
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    margin-block: 20px;
+    padding-top: 1em 1em 3em 1em;
+}
+
+/* styling button */
+button {
+    margin: 20px;
+    padding: 10px;
+}
