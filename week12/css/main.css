@@ -1,0 +1,48 @@
+/* 
+font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fa-paint-roller {
+    font-size: 6rem;
+    color: blue;
+}
+
+.max-margin {
+    max-width: 1200px;
+    /* margin: 0 auto; (means it center to middle) */
+    margin: 0 auto;
+}
+
+/* technically main & head are the second class name, but they have the same first class */
+.main {
+    background-color: antiquewhite;
+}
+
+.head {
+    background-color: antiquewhite;
+}
+
+/* This include for everything within the div */
+.container {
+    background-color: blueviolet;
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+}
