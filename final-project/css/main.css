@@ -1,0 +1,583 @@
+/***********************
+    Mobile Style
+***********************/
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    max-width: 1200px;
+}
+
+/********* Nav *********/
+
+.star-logo {
+    background-color: #c78c06;
+    padding: 15px;
+    width: 12%;
+}
+
+.nav-grid {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    /* padding: 20%;  */
+}
+
+.nav-grid a:hover {
+    background-color: #c78c06;
+    color: #222;
+    padding-right: 250px;
+    padding-left: 250px;
+
+}
+
+.nav-grid a:active {
+    color: black;
+}
+
+.nav-list {
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-title {
+    text-decoration: none;
+    text-transform: none;
+    color: #c78c06;
+}
+
+.nav-home {
+    text-decoration: none;
+    text-transform: none;
+    color: #222;
+}
+
+.nav-selection {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 11px;
+    padding-left: 11px;
+}
+
+.nav-selection li:nth-child(1) {
+    text-align: center;
+    background-color: #c78c06;
+    text-decoration: none;
+}
+
+.nav-list li:nth-child(1) {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 9px;
+    width: 100%;
+    border-radius: 1px;
+
+}
+
+ul,
+li {
+    padding: 15px;
+}
+
+.fa-solid {
+    background-color: #222;
+    padding: 10px;
+    color: #c78c06;
+}
+
+.main-banner {
+    width: 100%;
+}
+
+.banner-container {
+    position: relative;
+    display: inline-block;
+}
+
+.banner {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: 40%;
+    top: 35rem;
+    width: 100%;
+
+}
+
+.tennis-table {
+    width: 100%;
+}
+
+
+
+.paragraph {
+    color: white;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.connect-button {
+    background-color: #c78c06;
+    border: none;
+    font-size: 1rem;
+    padding: 1.5rem;
+
+}
+
+h1 {
+    color: white;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+
+/*********** End of nav *************/
+
+
+/******** Beginning of main *********/
+
+/* About services */
+
+.about-services {
+    padding: 13px;
+    background: #ffe6ac;
+}
+
+.about-us {
+    padding-left: 2px;
+    padding-bottom: 20px;
+}
+
+.about-text {
+    font-size: 11px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+/********* rest of all services **********/
+
+.support {
+    padding-top: 3rem;
+}
+
+.row1-services {
+    background-color: #ffe6ac;
+}
+
+.row2-services {
+    background-color: #ffe6ac;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.support {
+    border: 7px solid white;
+}
+
+.service-button {
+    color: white;
+    background: #222;
+    font-size: 1.1rem;
+    border: none;
+    padding: 15px;
+    width: 40%;
+}
+
+.paragraph {
+    font-size: 11px;
+    line-height: 1.6;
+    padding-bottom: 10px;
+}
+
+.paragraphs {
+    color: black;
+    font-size: 14px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.images {
+    width: 100%;
+}
+
+.digital {
+    margin: 10px;
+}
+
+.marketing {
+    margin: 10px;
+}
+
+.production {
+    margin: 10px;
+}
+
+.web {
+    margin: 10px;
+}
+
+.print {
+    margin: 10px;
+}
+
+/********* our vision ***********/
+
+.vision,
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.vision-image {
+    object-fit: cover;
+    max-height: 250px;
+    padding-top: 15px;
+}
+
+.vision-paragraph {
+    font-size: 11px;
+    line-height: 1.5;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.vision-button {
+    font-size: 1rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 6);
+    padding: 15px;
+    border-color: #c78c06;
+}
+
+.our-vision {
+    display: block;
+    color: white;
+    top: 6%;
+    left: 0%;
+}
+
+.vision-container {
+    position: relative;
+    width: 100%;
+}
+
+.info-vision {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+/********* Our team  ***********/
+
+
+.our-team {
+    padding: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.john-profile {
+    background-color: #ffe6ac;
+    margin: 20px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #c78c06;
+}
+
+.team-paragraph {
+    font-size: 11px;
+    line-height: 1.6;
+    background-color: #ffe6ac;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.bob-profile {
+    background-color: #ffe6ac;
+    margin: 20px;
+}
+
+/********* Contact us  ***********/
+
+.contact-us {
+    width: 100%;
+    padding-left: 15px;
+}
+
+.send-message {
+    padding-top: 15px;
+    padding-left: 5px;
+}
+
+label {
+    font-size: 11px;
+}
+
+.form {
+    margin: 10px;
+}
+
+.input-box {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.2em 1em 0.2em;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border: solid 0.5px black;
+    margin-right: 200px;
+    border-radius: 2px;
+}
+
+.input-large-box {
+    width: 100%;
+    height: 100%;
+    padding: 0.5em 0.2em 1em 0.2em;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    border: solid 0.5px black;
+    margin-right: 200px;
+    border-radius: 2px;
+    min-height: 100px;
+
+}
+
+.send-button {
+    font-size: 1rem;
+    color: #c78c06;
+    background-color: rgba(0, 0, 0, 6);
+    padding: 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+
+/********* Hours of oeprations  ***********/
+
+.hours-operations {
+    width: 100%;
+}
+
+.title-hours {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.hours {
+    padding-top: 4px;
+    width: 90%
+}
+
+th {
+    background-color: #ffe6ac;
+}
+
+table {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+
+td,
+th {
+    border: 1px solid black;
+    padding: 15px;
+    font-size: 13px;
+}
+
+.location-map {
+    position: relative;
+    max-width: 150%;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-us,
+.loaction-map {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-maps {
+    flex: 1;
+    padding: 20px;
+}
+
+/************** Footer ************/
+
+footer {
+    font-size: 13px;
+}
+
+.footer {
+    color: #c78c06;
+    background-color: #222;
+    padding: 20px;
+    width: 100%;
+}
+
+.deco {
+    color: #c78c06;
+}
+
+/***********************
+    End Mobile Style
+***********************/
+
+
+
+/***********************
+    Desktop Style
+***********************/
+
+/********* Nav Style *********/
+@media screen and (min-width:760px) {
+    nav {
+        max-width: 100%;
+    }
+
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
+    /********* H1 & Banner Style *********/
+
+    .tennis-table {
+        float: left;
+        max-width: 350px;
+        background-color: #ffe6ac;
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .banner {
+        display: block;
+        justify-content: center;
+        padding-left: 30px;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    /********* Services Style *********/
+
+    .row1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+
+    .row2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .vision-image {
+        width: 100%;
+    }
+
+    /********* Team Style *********/
+
+    .john-img {
+        float: left;
+        max-width: 50%;
+    }
+
+    .team-text1 {
+        background-position: 200px;
+        padding: 102px;
+    }
+
+    .bob-img {
+        float: right;
+        max-width: 50%;
+    }
+
+    .team-text2 {
+        background-position: 200px;
+        padding: 102px;
+
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    /********* Contact & Maps Style *********/
+
+    .contact-us,
+    .location-map {
+        width: 48%;
+
+    }
+
+    .contact-maps {
+        flex-basis: 100%;
+    }
+
+    .location-map {
+     position: relative;
+     top: -680px;
+     float: right;
+    }
+
+    .hours-operations {
+        width: 90% ;
+        top: 20px;
+    }
+
+
+}
